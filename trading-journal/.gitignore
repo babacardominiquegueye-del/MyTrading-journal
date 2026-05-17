@@ -1,0 +1,30 @@
+# ============================================================
+# .gitignore — Fichiers à ne JAMAIS committer sur GitHub
+# ============================================================
+
+# Variables d'environnement — TRÈS IMPORTANT !
+# Ces fichiers contiennent des secrets (mots de passe, clés API)
+.env
+.env.local
+.env.production
+
+# Dépendances Node.js (régénérées avec npm install)
+node_modules/
+*/node_modules/
+
+# Build React (régénéré avec npm run build)
+build/
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
